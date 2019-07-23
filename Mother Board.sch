@@ -31,7 +31,7 @@ U 1 1 5CC8EB7E
 P 4300 4400
 F 0 "U1" H 4300 4815 50  0000 C CNN
 F 1 "LM2595SX-3.3_NOPB" H 4300 4724 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-5_TabPin3" H 4300 4400 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 4300 4400 50  0001 C CNN
 F 3 "" H 4300 4400 50  0001 C CNN
 	1    4300 4400
 	1    0    0    -1  
@@ -42,7 +42,7 @@ U 1 1 5CC8EC09
 P 2800 2900
 F 0 "U2" H 2800 3315 50  0000 C CNN
 F 1 "LM2595SX-5.0_NOPB" H 2800 3224 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-5_TabPin3" H 2800 2900 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 2800 2900 50  0001 C CNN
 F 3 "" H 2800 2900 50  0001 C CNN
 	1    2800 2900
 	1    0    0    -1  
@@ -59,7 +59,7 @@ U 1 1 5CC8EDAF
 P 1100 1400
 F 0 "J1" H 1020 1075 50  0000 C CNN
 F 1 "Conn_01x02" H 1020 1166 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 1100 1400 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1100 1400 50  0001 C CNN
 F 3 "~" H 1100 1400 50  0001 C CNN
 	1    1100 1400
 	-1   0    0    1   
@@ -1000,11 +1000,11 @@ Wire Wire Line
 	18600 1500 18600 1900
 Connection ~ 18600 1900
 Text GLabel 3350 11600 2    50   Input ~ 0
-SPI2_SCK_PI1
+SPI2_SCK
 Text GLabel 3350 11700 2    50   Input ~ 0
-SPI2_MISO_PI2
+SPI2_MISO
 Text GLabel 3350 11800 2    50   Input ~ 0
-SPI2_MOSI_PI3
+SPI2_MOSI
 Text GLabel 3350 11900 2    50   Input ~ 0
 CARD0_CS
 $Comp
@@ -1436,17 +1436,6 @@ F 3 "" H 1600 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x22_Odd_Even CARD0
-U 1 1 5D34BB19
-P 3050 11800
-F 0 "CARD0" H 3100 13017 50  0000 C CNN
-F 1 "Conn_02x22_Odd_Even" H 3100 12926 50  0000 C CNN
-F 2 "connectors_mdg:5530843-4" H 3050 11800 50  0001 C CNN
-F 3 "~" H 3050 11800 50  0001 C CNN
-	1    3050 11800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0157
 U 1 1 5D34F4DB
 P 5750 12900
@@ -1489,17 +1478,6 @@ F 2 "" H 5750 12800 50  0001 C CNN
 F 3 "" H 5750 12800 50  0001 C CNN
 	1    5750 12800
 	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x22_Odd_Even CARD1
-U 1 1 5D34F4FB
-P 5950 11800
-F 0 "CARD1" H 6000 13017 50  0000 C CNN
-F 1 "Conn_02x22_Odd_Even" H 6000 12926 50  0000 C CNN
-F 2 "connectors_mdg:5530843-4" H 5950 11800 50  0001 C CNN
-F 3 "~" H 5950 11800 50  0001 C CNN
-	1    5950 11800
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0167
@@ -1546,17 +1524,6 @@ F 3 "" H 8700 12800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x22_Odd_Even CARD2
-U 1 1 5D3536E7
-P 8900 11800
-F 0 "CARD2" H 8950 13017 50  0000 C CNN
-F 1 "Conn_02x22_Odd_Even" H 8950 12926 50  0000 C CNN
-F 2 "connectors_mdg:5530843-4" H 8900 11800 50  0001 C CNN
-F 3 "~" H 8900 11800 50  0001 C CNN
-	1    8900 11800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0177
 U 1 1 5D353711
 P 11650 12900
@@ -1599,61 +1566,6 @@ F 2 "" H 11650 12800 50  0001 C CNN
 F 3 "" H 11650 12800 50  0001 C CNN
 	1    11650 12800
 	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x22_Odd_Even CARD3
-U 1 1 5D353731
-P 11850 11800
-F 0 "CARD3" H 11900 13017 50  0000 C CNN
-F 1 "Conn_02x22_Odd_Even" H 11900 12926 50  0000 C CNN
-F 2 "connectors_mdg:5530843-4" H 11850 11800 50  0001 C CNN
-F 3 "~" H 11850 11800 50  0001 C CNN
-	1    11850 11800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x22_Odd_Even CARD4
-U 1 1 5D35A9B2
-P 3050 14500
-F 0 "CARD4" H 3100 15717 50  0000 C CNN
-F 1 "Conn_02x22_Odd_Even" H 3100 15626 50  0000 C CNN
-F 2 "connectors_mdg:5530843-4" H 3050 14500 50  0001 C CNN
-F 3 "~" H 3050 14500 50  0001 C CNN
-	1    3050 14500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x22_Odd_Even CARD5
-U 1 1 5D35A9FC
-P 5950 14500
-F 0 "CARD5" H 6000 15717 50  0000 C CNN
-F 1 "Conn_02x22_Odd_Even" H 6000 15626 50  0000 C CNN
-F 2 "connectors_mdg:5530843-4" H 5950 14500 50  0001 C CNN
-F 3 "~" H 5950 14500 50  0001 C CNN
-	1    5950 14500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x22_Odd_Even CARD6
-U 1 1 5D35AA46
-P 8900 14500
-F 0 "CARD6" H 8950 15717 50  0000 C CNN
-F 1 "Conn_02x22_Odd_Even" H 8950 15626 50  0000 C CNN
-F 2 "connectors_mdg:5530843-4" H 8900 14500 50  0001 C CNN
-F 3 "~" H 8900 14500 50  0001 C CNN
-	1    8900 14500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x22_Odd_Even CARD7
-U 1 1 5D35AA90
-P 11850 14500
-F 0 "CARD7" H 11900 15717 50  0000 C CNN
-F 1 "Conn_02x22_Odd_Even" H 11900 15626 50  0000 C CNN
-F 2 "connectors_mdg:5530843-4" H 11850 14500 50  0001 C CNN
-F 3 "~" H 11850 14500 50  0001 C CNN
-	1    11850 14500
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:+24V #PWR0151
@@ -2670,53 +2582,21 @@ CARD3_ENABLE
 Text GLabel 11650 12200 0    50   Input ~ 0
 CARD3_STATUS
 Text GLabel 2850 12300 0    50   Input ~ 0
-USART1_TX_PB6
+USART1_TX
 Text GLabel 2850 12400 0    50   Input ~ 0
-USART1_RX_PB7
+USART1_RX
 Text GLabel 2850 12500 0    50   Input ~ 0
-USART1_CTS_PA11
+USART1_CTS
 Text GLabel 2850 12600 0    50   Input ~ 0
-USART1_RTS_PA12
-Text GLabel 5750 12300 0    50   Input ~ 0
-USART3_TX_PB10
-Text GLabel 5750 12400 0    50   Input ~ 0
-USART3_RX_PB11
-Text GLabel 5750 12500 0    50   Input ~ 0
-USART3_CTS_PB13
-Text GLabel 5750 12600 0    50   Input ~ 0
-USART3_RTS_PB14
+USART1_RTS
 Text GLabel 8700 12300 0    50   Input ~ 0
-USART3_TX_PD8
+USART3_TX
 Text GLabel 8700 12400 0    50   Input ~ 0
-USART3_RX_PD9
+USART3_RX
 Text GLabel 8700 12500 0    50   Input ~ 0
-USART3_CTS_PD11
+USART3_CTS
 Text GLabel 8700 12600 0    50   Input ~ 0
-USART3_RTS_PD12
-Text GLabel 18750 7750 2    50   Input ~ 0
-USART1_TX_PB6
-Text GLabel 18750 7850 2    50   Input ~ 0
-USART1_RX_PB7
-Text GLabel 18750 6550 2    50   Input ~ 0
-USART1_CTS_PA11
-Text GLabel 18750 6650 2    50   Input ~ 0
-USART1_RTS_PA12
-Text GLabel 18750 8150 2    50   Input ~ 0
-USART3_TX_PB10
-Text GLabel 18750 8250 2    50   Input ~ 0
-USART3_RX_PB11
-Text GLabel 18750 8450 2    50   Input ~ 0
-USART3_CTS_PB13
-Text GLabel 18750 8550 2    50   Input ~ 0
-USART3_RTS_PB14
-Text GLabel 18750 11350 2    50   Input ~ 0
-USART3_TX_PD8
-Text GLabel 18750 11450 2    50   Input ~ 0
-USART3_RX_PD9
-Text GLabel 18750 11650 2    50   Input ~ 0
-USART3_CTS_PD11
-Text GLabel 18750 11750 2    50   Input ~ 0
-USART3_RTS_PD12
+USART3_RTS
 Text GLabel 6250 11600 2    50   Input ~ 0
 SPI2_SCK_PI1
 Text GLabel 6250 11700 2    50   Input ~ 0
@@ -3117,122 +2997,26 @@ Text Label 5550 6400 0    50   ~ 0
 FTDI_RTS
 Text Label 5550 6500 0    50   ~ 0
 FTDI_CTS
-Text GLabel 18750 10850 2    50   Input ~ 0
-USART2_CTS_PD3
-Text GLabel 18750 10950 2    50   Input ~ 0
-USART2_RTS_PD4
-Text GLabel 18750 11150 2    50   Input ~ 0
-USART2_RX_PD6
-Text GLabel 18750 11050 2    50   Input ~ 0
-USART2_TX_PD5
 Text GLabel 11650 12300 0    50   Input ~ 0
-UART5_TX_PC12
+UART4_TX
 Text GLabel 11650 12400 0    50   Input ~ 0
-UART5_RX_PD2
-Text GLabel 18750 10750 2    50   Input ~ 0
-UART5_RX_PD2
-Text GLabel 18750 10050 2    50   Input ~ 0
-UART5_TX_PC12
+UART4_RX
 Text GLabel 3350 12000 2    50   Input ~ 0
 CARD0_TIM1_CH1
 Text GLabel 3350 12100 2    50   Input ~ 0
-CARD0_TIM1_CH2
+CARD0_TIM1_CH1N
 Text GLabel 3350 12200 2    50   Input ~ 0
-CARD0_TIM1_CH3
+CARD0_TIM3_CH1
 Text GLabel 3350 12300 2    50   Input ~ 0
-CARD0_TIM1_CH4
-Text GLabel 18750 13150 2    50   Input ~ 0
-CARD0_TIM1_CH1
-Text GLabel 18750 13350 2    50   Input ~ 0
-CARD0_TIM1_CH2
-Text GLabel 18750 13550 2    50   Input ~ 0
-CARD0_TIM1_CH3
-Text GLabel 18750 13650 2    50   Input ~ 0
-CARD0_TIM1_CH4
-Text GLabel 3350 12400 2    50   Input ~ 0
-CARD0_GPIO1
-Text GLabel 3350 12500 2    50   Input ~ 0
-CARD0_GPIO2
-Text GLabel 3350 12600 2    50   Input ~ 0
 CARD0_TIM2_CH1
-Text GLabel 3350 12700 2    50   Input ~ 0
-CARD0_GPIO4
-Text GLabel 18750 13050 2    50   Input ~ 0
+Text GLabel 3350 12400 2    50   Input ~ 0
+CARD0_TIM9_CH1
+Text GLabel 3350 12500 2    50   Input ~ 0
+CARD0_GPIO0
+Text GLabel 3350 12600 2    50   Input ~ 0
 CARD0_GPIO1
-Text GLabel 18750 13250 2    50   Input ~ 0
-CARD0_GPIO2
-Text GLabel 18750 12950 2    50   Input ~ 0
-CARD0_GPIO4
-Text GLabel 2850 12700 0    50   Input ~ 0
-CARD0_GPIO5
-Text GLabel 18750 13750 2    50   Input ~ 0
-CARD0_GPIO5
-Text GLabel 6250 12000 2    50   Input ~ 0
-CARD1_TIM8_CH1
-Text GLabel 6250 12100 2    50   Input ~ 0
-CARD1_TIM8_CH2
-Text GLabel 6250 12200 2    50   Input ~ 0
-CARD1_TIM8_CH3
-Text GLabel 6250 12300 2    50   Input ~ 0
-CARD1_TIM8_CH4
-Text GLabel 6250 12400 2    50   Input ~ 0
-CARD1_GPIO1
-Text GLabel 6250 12500 2    50   Input ~ 0
-CARD1_GPIO2
-Text GLabel 6250 12700 2    50   Input ~ 0
-CARD1_GPIO4
-Text GLabel 5750 12700 0    50   Input ~ 0
-CARD1_GPIO5
-Text GLabel 15850 8050 0    50   Input ~ 0
-CARD1_TIM8_CH1
-Text GLabel 15850 8150 0    50   Input ~ 0
-CARD1_TIM8_CH2
-Text GLabel 15850 8250 0    50   Input ~ 0
-CARD1_TIM8_CH3
-Text GLabel 15850 7750 0    50   Input ~ 0
-CARD1_TIM8_CH4
-Text GLabel 15850 10150 0    50   Input ~ 0
-CARD1_GPIO1
-Text GLabel 15850 10250 0    50   Input ~ 0
-CARD1_GPIO2
-Text GLabel 15850 7850 0    50   Input ~ 0
-CARD1_GPIO4
-Text GLabel 15850 7950 0    50   Input ~ 0
-CARD1_GPIO5
-Text GLabel 18750 5550 2    50   Input ~ 0
-CARD1_TIM2_CH2
-Text GLabel 9200 12000 2    50   Input ~ 0
-CARD2_TIM8_CH1
-Text GLabel 9200 12100 2    50   Input ~ 0
-CARD2_TIM8_CH2
-Text GLabel 9200 12200 2    50   Input ~ 0
-CARD2_TIM8_CH3
-Text GLabel 9200 12300 2    50   Input ~ 0
-CARD2_TIM8_CH4
-Text GLabel 9200 12400 2    50   Input ~ 0
-CARD2_GPIO1
-Text GLabel 9200 12500 2    50   Input ~ 0
-CARD2_GPIO2
-Text GLabel 9200 12700 2    50   Input ~ 0
-CARD2_GPIO4
-Text GLabel 8700 12700 0    50   Input ~ 0
-CARD2_GPIO5
-Text GLabel 12150 12000 2    50   Input ~ 0
-CARD3_TIM8_CH1
-Text GLabel 12150 12100 2    50   Input ~ 0
-CARD3_TIM8_CH2
-Text GLabel 12150 12200 2    50   Input ~ 0
-CARD3_TIM8_CH3
-Text GLabel 12150 12300 2    50   Input ~ 0
-CARD3_TIM8_CH4
-Text GLabel 12150 12400 2    50   Input ~ 0
-CARD3_GPIO1
-Text GLabel 12150 12500 2    50   Input ~ 0
-CARD3_GPIO2
-Text GLabel 12150 12700 2    50   Input ~ 0
-CARD3_GPIO4
-Text GLabel 11650 12700 0    50   Input ~ 0
-CARD3_GPIO5
+Text GLabel 3350 12700 2    50   Input ~ 0
+CARD0_SENSE_NEG
 $Comp
 L power:+24V #PWR0181
 U 1 1 5D9AEE68
@@ -4461,70 +4245,6 @@ Text GLabel 12150 14400 2    50   Input ~ 0
 SPI2_MISO_PI2
 Text GLabel 12150 14500 2    50   Input ~ 0
 SPI2_MOSI_PI3
-Text GLabel 3350 14700 2    50   Input ~ 0
-CARD4_TIM1_CH1
-Text GLabel 3350 14800 2    50   Input ~ 0
-CARD4_TIM1_CH2
-Text GLabel 3350 14900 2    50   Input ~ 0
-CARD4_TIM1_CH3
-Text GLabel 3350 15000 2    50   Input ~ 0
-CARD4_TIM1_CH4
-Text GLabel 3350 15100 2    50   Input ~ 0
-CARD4_GPIO1
-Text GLabel 3350 15200 2    50   Input ~ 0
-CARD4_GPIO2
-Text GLabel 3350 15400 2    50   Input ~ 0
-CARD4_GPIO4
-Text GLabel 2850 15400 0    50   Input ~ 0
-CARD4_GPIO5
-Text GLabel 6250 14700 2    50   Input ~ 0
-CARD5_TIM8_CH1
-Text GLabel 6250 14800 2    50   Input ~ 0
-CARD5_TIM8_CH2
-Text GLabel 6250 14900 2    50   Input ~ 0
-CARD5_TIM8_CH3
-Text GLabel 6250 15000 2    50   Input ~ 0
-CARD5_TIM8_CH4
-Text GLabel 6250 15100 2    50   Input ~ 0
-CARD5_GPIO1
-Text GLabel 6250 15200 2    50   Input ~ 0
-CARD5_GPIO2
-Text GLabel 6250 15400 2    50   Input ~ 0
-CARD5_GPIO4
-Text GLabel 5750 15400 0    50   Input ~ 0
-CARD5_GPIO5
-Text GLabel 9200 14700 2    50   Input ~ 0
-CARD6_TIM8_CH1
-Text GLabel 9200 14800 2    50   Input ~ 0
-CARD6_TIM8_CH2
-Text GLabel 9200 14900 2    50   Input ~ 0
-CARD6_TIM8_CH3
-Text GLabel 9200 15000 2    50   Input ~ 0
-CARD6_TIM8_CH4
-Text GLabel 9200 15100 2    50   Input ~ 0
-CARD6_GPIO1
-Text GLabel 9200 15200 2    50   Input ~ 0
-CARD6_GPIO2
-Text GLabel 9200 15400 2    50   Input ~ 0
-CARD6_GPIO4
-Text GLabel 8700 15400 0    50   Input ~ 0
-CARD6_GPIO5
-Text GLabel 12150 14700 2    50   Input ~ 0
-CARD7_TIM8_CH1
-Text GLabel 12150 14800 2    50   Input ~ 0
-CARD7_TIM8_CH2
-Text GLabel 12150 14900 2    50   Input ~ 0
-CARD7_TIM8_CH3
-Text GLabel 12150 15000 2    50   Input ~ 0
-CARD7_TIM8_CH4
-Text GLabel 12150 15100 2    50   Input ~ 0
-CARD7_GPIO1
-Text GLabel 12150 15200 2    50   Input ~ 0
-CARD7_GPIO2
-Text GLabel 12150 15400 2    50   Input ~ 0
-CARD7_GPIO4
-Text GLabel 11650 15400 0    50   Input ~ 0
-CARD7_GPIO5
 $Comp
 L power:+3.3V #PWR0322
 U 1 1 5D9DA328
@@ -4569,172 +4289,475 @@ F 3 "" H 10350 14800 50  0001 C CNN
 	1    10350 14800
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2600 10000 0    50   Input ~ 0
-CARD0_ENABLE
-Text GLabel 2600 10100 0    50   Input ~ 0
-CARD0_STATUS
-Text GLabel 2900 10100 2    50   Input ~ 0
-CARD0_CS
-Text GLabel 5850 10150 0    50   Input ~ 0
-CARD1_ENABLE
-Text GLabel 5850 10250 0    50   Input ~ 0
-CARD1_STATUS
-Text GLabel 6150 10100 2    50   Input ~ 0
-CARD1_CS
-Text GLabel 8750 10150 0    50   Input ~ 0
-CARD2_ENABLE
-Text GLabel 8750 10250 0    50   Input ~ 0
-CARD2_STATUS
-Text GLabel 9100 10100 2    50   Input ~ 0
-CARD2_CS
-Text GLabel 9100 9200 2    50   Input ~ 0
-CARD2_TIM8_CH1
-Text GLabel 9100 9300 2    50   Input ~ 0
-CARD2_TIM8_CH2
-Text GLabel 9100 9400 2    50   Input ~ 0
-CARD2_TIM8_CH3
-Text GLabel 9100 9500 2    50   Input ~ 0
-CARD2_TIM8_CH4
-Text GLabel 9100 9600 2    50   Input ~ 0
-CARD2_GPIO1
-Text GLabel 9100 9700 2    50   Input ~ 0
-CARD2_GPIO2
-Text GLabel 9100 9900 2    50   Input ~ 0
-CARD2_GPIO4
-Text GLabel 8750 10000 0    50   Input ~ 0
-CARD2_GPIO5
-Text GLabel 11700 10100 0    50   Input ~ 0
-CARD3_ENABLE
-Text GLabel 11700 10200 0    50   Input ~ 0
-CARD3_STATUS
-Text GLabel 11700 10350 0    50   Input ~ 0
-CARD3_GPIO5
-Text GLabel 11950 9200 2    50   Input ~ 0
-CARD3_CS
-Text GLabel 11950 9300 2    50   Input ~ 0
-CARD3_TIM8_CH1
-Text GLabel 11950 9400 2    50   Input ~ 0
-CARD3_TIM8_CH2
-Text GLabel 11950 9500 2    50   Input ~ 0
-CARD3_TIM8_CH3
-Text GLabel 11950 9600 2    50   Input ~ 0
-CARD3_TIM8_CH4
-Text GLabel 11950 9700 2    50   Input ~ 0
-CARD3_GPIO1
-Text GLabel 11950 9800 2    50   Input ~ 0
-CARD3_GPIO2
-Text GLabel 11950 10000 2    50   Input ~ 0
-CARD3_GPIO4
-Text GLabel 18750 5950 2    50   Input ~ 0
-CARD0_TIM2_CH1
-Text GLabel 6250 12600 2    50   Input ~ 0
+$Comp
+L flash_memory_mdg:W25Q128JV-DTR U6
+U 1 1 5D3470BA
+P 9850 6250
+F 0 "U6" H 9850 6825 50  0000 C CNN
+F 1 "W25Q128JV-DTR" H 9850 6734 50  0000 C CNN
+F 2 "" H 9850 6250 50  0001 C CNN
+F 3 "" H 9850 6250 50  0001 C CNN
+	1    9850 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x22_Top_Bottom CARD0
+U 1 1 5D4A0BAF
+P 3050 11800
+F 0 "CARD0" H 3100 13017 50  0000 C CNN
+F 1 "Conn_02x22_Top_Bottom" H 3100 12926 50  0000 C CNN
+F 2 "connectors_mdg:5530843-4" H 3050 11800 50  0001 C CNN
+F 3 "~" H 3050 11800 50  0001 C CNN
+F 4 " 5530843-4" H 3050 11800 50  0001 C CNN "Part Number"
+	1    3050 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x22_Top_Bottom CARD1
+U 1 1 5D4B16DB
+P 5950 11800
+F 0 "CARD1" H 6000 13017 50  0000 C CNN
+F 1 "Conn_02x22_Top_Bottom" H 6000 12926 50  0000 C CNN
+F 2 "connectors_mdg:5530843-4" H 5950 11800 50  0001 C CNN
+F 3 "~" H 5950 11800 50  0001 C CNN
+F 4 " 5530843-4" H 5950 11800 50  0001 C CNN "Part Number"
+	1    5950 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x22_Top_Bottom CARD2
+U 1 1 5D4B1D20
+P 8900 11800
+F 0 "CARD2" H 8950 13017 50  0000 C CNN
+F 1 "Conn_02x22_Top_Bottom" H 8950 12926 50  0000 C CNN
+F 2 "connectors_mdg:5530843-4" H 8900 11800 50  0001 C CNN
+F 3 "~" H 8900 11800 50  0001 C CNN
+F 4 " 5530843-4" H 8900 11800 50  0001 C CNN "Part Number"
+	1    8900 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x22_Top_Bottom CARD3
+U 1 1 5D4B28A0
+P 11850 11800
+F 0 "CARD3" H 11900 13017 50  0000 C CNN
+F 1 "Conn_02x22_Top_Bottom" H 11900 12926 50  0000 C CNN
+F 2 "connectors_mdg:5530843-4" H 11850 11800 50  0001 C CNN
+F 3 "~" H 11850 11800 50  0001 C CNN
+F 4 " 5530843-4" H 11850 11800 50  0001 C CNN "Part Number"
+	1    11850 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x22_Top_Bottom CARD4
+U 1 1 5D4B3430
+P 3050 14500
+F 0 "CARD4" H 3100 15717 50  0000 C CNN
+F 1 "Conn_02x22_Top_Bottom" H 3100 15626 50  0000 C CNN
+F 2 "connectors_mdg:5530843-4" H 3050 14500 50  0001 C CNN
+F 3 "~" H 3050 14500 50  0001 C CNN
+F 4 " 5530843-4" H 3050 14500 50  0001 C CNN "Part Number"
+	1    3050 14500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x22_Top_Bottom CARD5
+U 1 1 5D4B3D1A
+P 5950 14500
+F 0 "CARD5" H 6000 15717 50  0000 C CNN
+F 1 "Conn_02x22_Top_Bottom" H 6000 15626 50  0000 C CNN
+F 2 "connectors_mdg:5530843-4" H 5950 14500 50  0001 C CNN
+F 3 "~" H 5950 14500 50  0001 C CNN
+F 4 " 5530843-4" H 5950 14500 50  0001 C CNN "Part Number"
+	1    5950 14500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x22_Top_Bottom CARD6
+U 1 1 5D4B41FB
+P 8900 14500
+F 0 "CARD6" H 8950 15717 50  0000 C CNN
+F 1 "Conn_02x22_Top_Bottom" H 8950 15626 50  0000 C CNN
+F 2 "connectors_mdg:5530843-4" H 8900 14500 50  0001 C CNN
+F 3 "~" H 8900 14500 50  0001 C CNN
+F 4 " 5530843-4" H 8900 14500 50  0001 C CNN "Part Number"
+	1    8900 14500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x22_Top_Bottom CARD7
+U 1 1 5D4B4689
+P 11850 14500
+F 0 "CARD7" H 11900 15717 50  0000 C CNN
+F 1 "Conn_02x22_Top_Bottom" H 11900 15626 50  0000 C CNN
+F 2 "connectors_mdg:5530843-4" H 11850 14500 50  0001 C CNN
+F 3 "~" H 11850 14500 50  0001 C CNN
+F 4 " 5530843-4" H 11850 14500 50  0001 C CNN "Part Number"
+	1    11850 14500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 5D4DAFE3
+P 1750 12700
+F 0 "R41" V 1850 12700 50  0000 C CNN
+F 1 "10k" V 1750 12700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 12700 50  0001 C CNN
+F 3 "~" H 1750 12700 50  0001 C CNN
+	1    1750 12700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1900 12700 2850 12700
+$Comp
+L power:+3.3V #PWR0326
+U 1 1 5D4E869F
+P 1600 12700
+F 0 "#PWR0326" H 1600 12550 50  0001 C CNN
+F 1 "+3.3V" V 1600 12850 50  0000 L CNN
+F 2 "" H 1600 12700 50  0001 C CNN
+F 3 "" H 1600 12700 50  0001 C CNN
+	1    1600 12700
+	0    -1   -1   0   
+$EndComp
+Text Label 2000 12700 3    50   ~ 0
+CARD0_SENSE_POS
+Text GLabel 5750 12300 0    50   Input ~ 0
+USART6_TX
+Text GLabel 5750 12400 0    50   Input ~ 0
+USART6_RX
+Text GLabel 5750 12500 0    50   Input ~ 0
+USART6_CTS
+Text GLabel 5750 12600 0    50   Input ~ 0
+USART6_RTS
+$Comp
+L Device:R R43
+U 1 1 5D50D131
+P 4650 12700
+F 0 "R43" V 4750 12700 50  0000 C CNN
+F 1 "10k" V 4650 12700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4580 12700 50  0001 C CNN
+F 3 "~" H 4650 12700 50  0001 C CNN
+	1    4650 12700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4800 12700 5750 12700
+$Comp
+L power:+3.3V #PWR0327
+U 1 1 5D50D138
+P 4500 12700
+F 0 "#PWR0327" H 4500 12550 50  0001 C CNN
+F 1 "+3.3V" V 4500 12850 50  0000 L CNN
+F 2 "" H 4500 12700 50  0001 C CNN
+F 3 "" H 4500 12700 50  0001 C CNN
+	1    4500 12700
+	0    -1   -1   0   
+$EndComp
+Text Label 4900 12700 3    50   ~ 0
+CARD1_SENSE_POS
+Text GLabel 6250 12700 2    50   Input ~ 0
+CARD1_SENSE_NEG
+Text GLabel 6250 12000 2    50   Input ~ 0
+CARD1_TIM1_CH2
+Text GLabel 6250 12100 2    50   Input ~ 0
+CARD1_TIM1_CH2N
+Text GLabel 6250 12200 2    50   Input ~ 0
+CARD1_TIM3_CH2
+Text GLabel 6250 12300 2    50   Input ~ 0
 CARD1_TIM2_CH2
-Text GLabel 18750 5650 2    50   Input ~ 0
+Text GLabel 6250 12400 2    50   Input ~ 0
+CARD1_TIM9_CH2
+Text GLabel 6250 12500 2    50   Input ~ 0
+CARD1_GPIO0
+Text GLabel 6250 12600 2    50   Input ~ 0
+CARD1_GPIO1
+$Comp
+L Device:R R45
+U 1 1 5D53F53F
+P 7600 12700
+F 0 "R45" V 7700 12700 50  0000 C CNN
+F 1 "10k" V 7600 12700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7530 12700 50  0001 C CNN
+F 3 "~" H 7600 12700 50  0001 C CNN
+	1    7600 12700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7750 12700 8700 12700
+$Comp
+L power:+3.3V #PWR0328
+U 1 1 5D53F546
+P 7450 12700
+F 0 "#PWR0328" H 7450 12550 50  0001 C CNN
+F 1 "+3.3V" V 7450 12850 50  0000 L CNN
+F 2 "" H 7450 12700 50  0001 C CNN
+F 3 "" H 7450 12700 50  0001 C CNN
+	1    7450 12700
+	0    -1   -1   0   
+$EndComp
+Text Label 7850 12700 3    50   ~ 0
+CARD2_SENSE_POS
+Text GLabel 9200 12700 2    50   Input ~ 0
+CARD2_SENSE_NEG
+Text GLabel 9200 12000 2    50   Input ~ 0
+CARD2_TIM1_CH3
+Text GLabel 9200 12100 2    50   Input ~ 0
+CARD2_TIM1_CH3N
+Text GLabel 9200 12200 2    50   Input ~ 0
+CARD2_TIM3_CH3
+Text GLabel 9200 12300 2    50   Input ~ 0
 CARD2_TIM2_CH3
+Text GLabel 9200 12400 2    50   Input ~ 0
+CARD2_TIM10_CH1
+Text GLabel 9200 12500 2    50   Input ~ 0
+CARD2_GPIO0
 Text GLabel 9200 12600 2    50   Input ~ 0
-CARD2_TIM2_CH3
-Text GLabel 18750 5750 2    50   Input ~ 0
+CARD2_GPIO1
+$Comp
+L Device:R R47
+U 1 1 5D5C4506
+P 10550 12700
+F 0 "R47" V 10650 12700 50  0000 C CNN
+F 1 "10k" V 10550 12700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10480 12700 50  0001 C CNN
+F 3 "~" H 10550 12700 50  0001 C CNN
+	1    10550 12700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10700 12700 11650 12700
+$Comp
+L power:+3.3V #PWR0329
+U 1 1 5D5C450D
+P 10400 12700
+F 0 "#PWR0329" H 10400 12550 50  0001 C CNN
+F 1 "+3.3V" V 10400 12850 50  0000 L CNN
+F 2 "" H 10400 12700 50  0001 C CNN
+F 3 "" H 10400 12700 50  0001 C CNN
+	1    10400 12700
+	0    -1   -1   0   
+$EndComp
+Text Label 10800 12700 3    50   ~ 0
+CARD3_SENSE_POS
+Text GLabel 12150 12700 2    50   Input ~ 0
+CARD3_SENSE_NEG
+Text GLabel 12150 12000 2    50   Input ~ 0
+CARD3_TIM1_CH4
+Text GLabel 12150 12200 2    50   Input ~ 0
+CARD3_TIM3_CH4
+Text GLabel 12150 12300 2    50   Input ~ 0
 CARD3_TIM2_CH4
+Text GLabel 12150 12400 2    50   Input ~ 0
+CARD3_TIM11_CH1
+Text GLabel 12150 12500 2    50   Input ~ 0
+CARD3_GPIO0
+Text GLabel 12150 12600 2    50   Input ~ 0
+CARD3_GPIO1
+$Comp
+L Device:R R42
+U 1 1 5D62DBAB
+P 1750 15400
+F 0 "R42" V 1850 15400 50  0000 C CNN
+F 1 "10k" V 1750 15400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 15400 50  0001 C CNN
+F 3 "~" H 1750 15400 50  0001 C CNN
+	1    1750 15400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1900 15400 2850 15400
+$Comp
+L power:+3.3V #PWR0330
+U 1 1 5D62DBB2
+P 1600 15400
+F 0 "#PWR0330" H 1600 15250 50  0001 C CNN
+F 1 "+3.3V" V 1600 15550 50  0000 L CNN
+F 2 "" H 1600 15400 50  0001 C CNN
+F 3 "" H 1600 15400 50  0001 C CNN
+	1    1600 15400
+	0    -1   -1   0   
+$EndComp
+Text Label 2000 15400 3    50   ~ 0
+CARD4_SENSE_POS
+$Comp
+L Device:R R44
+U 1 1 5D63B696
+P 4650 15400
+F 0 "R44" V 4750 15400 50  0000 C CNN
+F 1 "10k" V 4650 15400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4580 15400 50  0001 C CNN
+F 3 "~" H 4650 15400 50  0001 C CNN
+	1    4650 15400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4800 15400 5750 15400
+$Comp
+L power:+3.3V #PWR0331
+U 1 1 5D63B69D
+P 4500 15400
+F 0 "#PWR0331" H 4500 15250 50  0001 C CNN
+F 1 "+3.3V" V 4500 15550 50  0000 L CNN
+F 2 "" H 4500 15400 50  0001 C CNN
+F 3 "" H 4500 15400 50  0001 C CNN
+	1    4500 15400
+	0    -1   -1   0   
+$EndComp
+Text Label 4900 15400 3    50   ~ 0
+CARD5_SENSE_POS
+$Comp
+L Device:R R46
+U 1 1 5D649701
+P 7600 15400
+F 0 "R46" V 7700 15400 50  0000 C CNN
+F 1 "10k" V 7600 15400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7530 15400 50  0001 C CNN
+F 3 "~" H 7600 15400 50  0001 C CNN
+	1    7600 15400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7750 15400 8700 15400
+$Comp
+L power:+3.3V #PWR0332
+U 1 1 5D649708
+P 7450 15400
+F 0 "#PWR0332" H 7450 15250 50  0001 C CNN
+F 1 "+3.3V" V 7450 15550 50  0000 L CNN
+F 2 "" H 7450 15400 50  0001 C CNN
+F 3 "" H 7450 15400 50  0001 C CNN
+	1    7450 15400
+	0    -1   -1   0   
+$EndComp
+Text Label 7850 15400 3    50   ~ 0
+CARD6_SENSE_POS
+$Comp
+L Device:R R48
+U 1 1 5D657967
+P 10550 15400
+F 0 "R48" V 10650 15400 50  0000 C CNN
+F 1 "10k" V 10550 15400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10480 15400 50  0001 C CNN
+F 3 "~" H 10550 15400 50  0001 C CNN
+	1    10550 15400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10700 15400 11650 15400
+$Comp
+L power:+3.3V #PWR0333
+U 1 1 5D65796E
+P 10400 15400
+F 0 "#PWR0333" H 10400 15250 50  0001 C CNN
+F 1 "+3.3V" V 10400 15550 50  0000 L CNN
+F 2 "" H 10400 15400 50  0001 C CNN
+F 3 "" H 10400 15400 50  0001 C CNN
+	1    10400 15400
+	0    -1   -1   0   
+$EndComp
+Text Label 10800 15400 3    50   ~ 0
+CARD7_SENSE_POS
+Text GLabel 3350 14700 2    50   Input ~ 0
+CARD4_TIM8_CH1
+Text GLabel 3350 14800 2    50   Input ~ 0
+CARD4_TIM8_CH1N
+Text GLabel 3350 14900 2    50   Input ~ 0
+CARD4_TIM5_CH1
+Text GLabel 3350 15000 2    50   Input ~ 0
+CARD4_TIM4_CH1
+Text GLabel 3350 15100 2    50   Input ~ 0
+CARD4_TIM12_CH1
+Text GLabel 3350 15200 2    50   Input ~ 0
+CARD4_GPIO0
 Text GLabel 3350 15300 2    50   Input ~ 0
-CARD4_TIM3_CH1
-Text GLabel 18750 6050 2    50   Input ~ 0
-CARD4_TIM3_CH1
-Text GLabel 6250 15300 2    50   Input ~ 0
-CARD5_TIM3_CH2
-Text GLabel 18750 6150 2    50   Input ~ 0
-CARD5_TIM3_CH2
-Text GLabel 9200 15300 2    50   Input ~ 0
-CARD6_TIM3_CH3
-Text GLabel 18750 7150 2    50   Input ~ 0
-CARD6_TIM3_CH3
-Text GLabel 12150 15300 2    50   Input ~ 0
-CARD7_TIM3_CH4
-Text GLabel 18750 7250 2    50   Input ~ 0
-CARD7_TIM3_CH4
-Text GLabel 2900 15900 0    50   Input ~ 0
-CARD4_ENABLE
-Text GLabel 2900 16000 0    50   Input ~ 0
-CARD4_STATUS
-Text GLabel 2900 16100 0    50   Input ~ 0
-CARD4_GPIO5
-Text GLabel 3250 15900 2    50   Input ~ 0
-CARD4_CS
-Text GLabel 3250 16000 2    50   Input ~ 0
-CARD4_TIM1_CH1
-Text GLabel 3250 16100 2    50   Input ~ 0
-CARD4_TIM1_CH2
-Text GLabel 3250 16200 2    50   Input ~ 0
-CARD4_TIM1_CH3
-Text GLabel 3250 16300 2    50   Input ~ 0
-CARD4_TIM1_CH4
-Text GLabel 3250 16400 2    50   Input ~ 0
 CARD4_GPIO1
-Text GLabel 3250 16500 2    50   Input ~ 0
-CARD4_GPIO2
-Text GLabel 3250 16700 2    50   Input ~ 0
-CARD4_GPIO4
-Text GLabel 5800 15900 0    50   Input ~ 0
-CARD5_ENABLE
-Text GLabel 5800 16000 0    50   Input ~ 0
-CARD5_STATUS
-Text GLabel 5800 16500 0    50   Input ~ 0
-CARD5_GPIO5
-Text GLabel 6250 15900 2    50   Input ~ 0
-CARD5_CS
-Text GLabel 6250 16000 2    50   Input ~ 0
-CARD5_TIM8_CH1
-Text GLabel 6250 16100 2    50   Input ~ 0
+Text GLabel 3350 15400 2    50   Input ~ 0
+CARD4_SENSE_NEG
+Text GLabel 6250 14700 2    50   Input ~ 0
 CARD5_TIM8_CH2
-Text GLabel 6250 16200 2    50   Input ~ 0
-CARD5_TIM8_CH3
-Text GLabel 6250 16300 2    50   Input ~ 0
-CARD5_TIM8_CH4
-Text GLabel 6250 16400 2    50   Input ~ 0
+Text GLabel 6250 14800 2    50   Input ~ 0
+CARD5_TIM8_CH2N
+Text GLabel 6250 14900 2    50   Input ~ 0
+CARD5_TIM5_CH2
+Text GLabel 6250 15000 2    50   Input ~ 0
+CARD5_TIM4_CH2
+Text GLabel 6250 15100 2    50   Input ~ 0
+CARD5_TIM12_CH2
+Text GLabel 6250 15200 2    50   Input ~ 0
+CARD5_GPIO0
+Text GLabel 6250 15300 2    50   Input ~ 0
 CARD5_GPIO1
-Text GLabel 6250 16500 2    50   Input ~ 0
-CARD5_GPIO2
-Text GLabel 6250 16700 2    50   Input ~ 0
-CARD5_GPIO4
-Text GLabel 9200 15900 2    50   Input ~ 0
-CARD6_CS
-Text GLabel 9200 16000 2    50   Input ~ 0
-CARD6_TIM8_CH1
-Text GLabel 9200 16100 2    50   Input ~ 0
-CARD6_TIM8_CH2
-Text GLabel 9200 16200 2    50   Input ~ 0
+Text GLabel 6250 15400 2    50   Input ~ 0
+CARD5_SENSE_NEG
+Text GLabel 9200 14700 2    50   Input ~ 0
 CARD6_TIM8_CH3
-Text GLabel 9200 16300 2    50   Input ~ 0
-CARD6_TIM8_CH4
-Text GLabel 9200 16400 2    50   Input ~ 0
+Text GLabel 9200 14800 2    50   Input ~ 0
+CARD6_TIM8_CH3N
+Text GLabel 9200 14900 2    50   Input ~ 0
+CARD6_TIM5_CH3
+Text GLabel 9200 15000 2    50   Input ~ 0
+CARD6_TIM4_CH3
+Text GLabel 9200 15100 2    50   Input ~ 0
+CARD6_TIM13_CH1
+Text GLabel 9200 15200 2    50   Input ~ 0
+CARD6_GPIO0
+Text GLabel 9200 15300 2    50   Input ~ 0
 CARD6_GPIO1
-Text GLabel 9200 16500 2    50   Input ~ 0
-CARD6_GPIO2
-Text GLabel 9200 16700 2    50   Input ~ 0
-CARD6_GPIO4
-Text GLabel 8600 15950 0    50   Input ~ 0
-CARD6_ENABLE
-Text GLabel 8600 16050 0    50   Input ~ 0
-CARD6_STATUS
-Text GLabel 8600 16550 0    50   Input ~ 0
-CARD6_GPIO5
-Text GLabel 12300 15850 2    50   Input ~ 0
-CARD7_TIM8_CH1
-Text GLabel 12300 15950 2    50   Input ~ 0
-CARD7_TIM8_CH2
-Text GLabel 12300 16050 2    50   Input ~ 0
-CARD7_TIM8_CH3
-Text GLabel 12300 16150 2    50   Input ~ 0
+Text GLabel 9200 15400 2    50   Input ~ 0
+CARD6_SENSE_NEG
+Text GLabel 12150 14700 2    50   Input ~ 0
 CARD7_TIM8_CH4
-Text GLabel 12300 16250 2    50   Input ~ 0
+Text GLabel 12150 14900 2    50   Input ~ 0
+CARD7_TIM5_CH4
+Text GLabel 12150 15000 2    50   Input ~ 0
+CARD7_TIM4_CH4
+Text GLabel 12150 15100 2    50   Input ~ 0
+CARD7_TIM14_CH1
+Text GLabel 12150 15200 2    50   Input ~ 0
+CARD7_GPIO0
+Text GLabel 12150 15300 2    50   Input ~ 0
 CARD7_GPIO1
-Text GLabel 12300 16350 2    50   Input ~ 0
+Text GLabel 12150 15400 2    50   Input ~ 0
+CARD7_SENSE_NEG
+Text GLabel 11650 12600 0    50   Input ~ 0
+CARD3_GPIO2
+Text GLabel 11650 12500 0    50   Input ~ 0
+CARD3_GPIO3
+Text GLabel 12150 12100 2    50   Input ~ 0
+CARD3_GPIO4
+Text GLabel 2850 15300 0    50   Input ~ 0
+CARD4_GPIO2
+Text GLabel 2850 15200 0    50   Input ~ 0
+CARD4_GPIO3
+Text GLabel 2850 15100 0    50   Input ~ 0
+CARD4_GPIO4
+Text GLabel 2850 15000 0    50   Input ~ 0
+CARD4_GPIO5
+Text GLabel 5750 15300 0    50   Input ~ 0
+CARD5_GPIO2
+Text GLabel 5750 15200 0    50   Input ~ 0
+CARD5_GPIO3
+Text GLabel 5750 15100 0    50   Input ~ 0
+CARD5_GPIO4
+Text GLabel 5750 15000 0    50   Input ~ 0
+CARD5_GPIO5
+Text GLabel 8700 15300 0    50   Input ~ 0
+CARD6_GPIO2
+Text GLabel 8700 15200 0    50   Input ~ 0
+CARD6_GPIO3
+Text GLabel 8700 15100 0    50   Input ~ 0
+CARD6_GPIO4
+Text GLabel 8700 15000 0    50   Input ~ 0
+CARD6_GPIO5
+Text GLabel 11650 15300 0    50   Input ~ 0
 CARD7_GPIO2
-Text GLabel 12300 16550 2    50   Input ~ 0
+Text GLabel 11650 15200 0    50   Input ~ 0
+CARD7_GPIO3
+Text GLabel 11650 15100 0    50   Input ~ 0
 CARD7_GPIO4
-Text GLabel 11600 15900 0    50   Input ~ 0
-CARD7_ENABLE
-Text GLabel 11600 16000 0    50   Input ~ 0
-CARD7_STATUS
-Text GLabel 11600 16500 0    50   Input ~ 0
+Text GLabel 11650 15000 0    50   Input ~ 0
 CARD7_GPIO5
+Text GLabel 12150 14800 2    50   Input ~ 0
+CARD7_GPIO6
 $EndSCHEMATC
