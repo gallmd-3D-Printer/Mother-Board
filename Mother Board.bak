@@ -26,28 +26,6 @@ F 3 "" H 4150 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C2
-U 1 1 5CC8F094
-P 3750 1800
-F 0 "C2" H 3500 1850 50  0000 L CNN
-F 1 "CP" H 3500 1750 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 3788 1650 50  0001 C CNN
-F 3 "~" H 3750 1800 50  0001 C CNN
-	1    3750 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C1
-U 1 1 5CC8F23F
-P 2650 2100
-F 0 "C1" H 2400 2150 50  0000 L CNN
-F 1 "CP" H 2400 2050 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 2688 1950 50  0001 C CNN
-F 3 "~" H 2650 2100 50  0001 C CNN
-	1    2650 2100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 5CC90056
 P 7300 8550
@@ -78,28 +56,6 @@ F 1 "GND" H 7305 8827 50  0000 C CNN
 F 2 "" H 7300 9000 50  0001 C CNN
 F 3 "" H 7300 9000 50  0001 C CNN
 	1    7300 9000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C4
-U 1 1 5CC90A09
-P 4050 1800
-F 0 "C4" H 4200 1850 50  0000 L CNN
-F 1 "CP" H 4200 1750 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 4088 1650 50  0001 C CNN
-F 3 "~" H 4050 1800 50  0001 C CNN
-	1    4050 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5CC90A11
-P 2100 2700
-F 0 "#PWR0111" H 2100 2450 50  0001 C CNN
-F 1 "GND" H 2105 2527 50  0000 C CNN
-F 2 "" H 2100 2700 50  0001 C CNN
-F 3 "" H 2100 2700 50  0001 C CNN
-	1    2100 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -183,8 +139,8 @@ $Comp
 L Interface_USB:FT232RL U3
 U 1 1 5CD22F12
 P 4200 13900
-F 0 "U3" H 4200 15200 50  0000 C CNN
-F 1 "FT232RL" H 4250 15300 50  0000 C CNN
+F 0 "U3" H 4200 13750 50  0000 C CNN
+F 1 "FT232RL" H 4200 13650 50  0000 C CNN
 F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 4200 13900 50  0001 C CNN
 F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 4200 13900 50  0001 C CNN
 	1    4200 13900
@@ -809,21 +765,21 @@ F 3 "" H 20600 6900 50  0001 C CNN
 $EndComp
 Connection ~ 20600 6900
 $Comp
-L Connector:TestPoint TP1
+L Connector:TestPoint I2C1_SCL1
 U 1 1 5CDB71AF
 P 5650 2050
-F 0 "TP1" V 5600 2250 50  0000 L CNN
+F 0 "I2C1_SCL1" V 5600 2250 50  0000 L CNN
 F 1 "TestPoint" V 5700 2250 50  0000 L CNN
-F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 5850 2050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 5850 2050 50  0001 C CNN
 F 3 "~" H 5850 2050 50  0001 C CNN
 	1    5650 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L Connector:TestPoint I2C1_SDA1
 U 1 1 5CDB7B27
 P 5850 2050
-F 0 "TP2" V 5800 2250 50  0000 L CNN
+F 0 "I2C1_SDA1" V 5800 2250 50  0000 L CNN
 F 1 "TestPoint" V 5900 2250 50  0000 L CNN
 F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 6050 2050 50  0001 C CNN
 F 3 "~" H 6050 2050 50  0001 C CNN
@@ -831,10 +787,10 @@ F 3 "~" H 6050 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L Connector:TestPoint SPI3_SCK1
 U 1 1 5CDB805C
 P 6050 2050
-F 0 "TP3" V 6000 2250 50  0000 L CNN
+F 0 "SPI3_SCK1" V 6000 2250 50  0000 L CNN
 F 1 "TestPoint" V 6100 2250 50  0000 L CNN
 F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 6250 2050 50  0001 C CNN
 F 3 "~" H 6250 2050 50  0001 C CNN
@@ -842,10 +798,10 @@ F 3 "~" H 6250 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP4
+L Connector:TestPoint SPI3_MISO1
 U 1 1 5CDB85AC
 P 6250 2050
-F 0 "TP4" V 6200 2250 50  0000 L CNN
+F 0 "SPI3_MISO1" V 6200 2250 50  0000 L CNN
 F 1 "TestPoint" V 6300 2250 50  0000 L CNN
 F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 6450 2050 50  0001 C CNN
 F 3 "~" H 6450 2050 50  0001 C CNN
@@ -853,10 +809,10 @@ F 3 "~" H 6450 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP5
+L Connector:TestPoint SPI3_MOSI1
 U 1 1 5CDB8912
 P 6450 2050
-F 0 "TP5" V 6400 2250 50  0000 L CNN
+F 0 "SPI3_MOSI1" V 6400 2250 50  0000 L CNN
 F 1 "TestPoint" V 6500 2250 50  0000 L CNN
 F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 6650 2050 50  0001 C CNN
 F 3 "~" H 6650 2050 50  0001 C CNN
@@ -864,10 +820,10 @@ F 3 "~" H 6650 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP6
+L Connector:TestPoint GND1
 U 1 1 5CDB8CB7
 P 6650 2050
-F 0 "TP6" V 6600 2250 50  0000 L CNN
+F 0 "GND1" V 6600 2250 50  0000 L CNN
 F 1 "TestPoint" V 6700 2250 50  0000 L CNN
 F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 6850 2050 50  0001 C CNN
 F 3 "~" H 6850 2050 50  0001 C CNN
@@ -875,10 +831,10 @@ F 3 "~" H 6850 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP7
+L Connector:TestPoint GND2
 U 1 1 5CDB8CBD
 P 6850 2050
-F 0 "TP7" V 6800 2250 50  0000 L CNN
+F 0 "GND2" V 6800 2250 50  0000 L CNN
 F 1 "TestPoint" V 6900 2250 50  0000 L CNN
 F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 7050 2050 50  0001 C CNN
 F 3 "~" H 7050 2050 50  0001 C CNN
@@ -886,10 +842,10 @@ F 3 "~" H 7050 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP8
+L Connector:TestPoint GND3
 U 1 1 5CDB8CC3
 P 7050 2050
-F 0 "TP8" V 7000 2250 50  0000 L CNN
+F 0 "GND3" V 7000 2250 50  0000 L CNN
 F 1 "TestPoint" V 7100 2250 50  0000 L CNN
 F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 7250 2050 50  0001 C CNN
 F 3 "~" H 7250 2050 50  0001 C CNN
@@ -897,10 +853,10 @@ F 3 "~" H 7250 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP9
+L Connector:TestPoint GND4
 U 1 1 5CDB8CC9
 P 7250 2050
-F 0 "TP9" V 7200 2250 50  0000 L CNN
+F 0 "GND4" V 7200 2250 50  0000 L CNN
 F 1 "TestPoint" V 7300 2250 50  0000 L CNN
 F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 7450 2050 50  0001 C CNN
 F 3 "~" H 7450 2050 50  0001 C CNN
@@ -908,10 +864,10 @@ F 3 "~" H 7450 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP10
+L Connector:TestPoint GND5
 U 1 1 5CDB8CCF
 P 7450 2050
-F 0 "TP10" V 7400 2250 50  0000 L CNN
+F 0 "GND5" V 7400 2250 50  0000 L CNN
 F 1 "TestPoint" V 7500 2250 50  0000 L CNN
 F 2 "Measurement_Points:Test_Point_Keystone_5010-5014_Multipurpose" H 7650 2050 50  0001 C CNN
 F 3 "~" H 7650 2050 50  0001 C CNN
@@ -971,17 +927,6 @@ F 1 "GND" H 7455 1877 50  0000 C CNN
 F 2 "" H 7450 2050 50  0001 C CNN
 F 3 "" H 7450 2050 50  0001 C CNN
 	1    7450 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C17
-U 1 1 5D328F89
-P 1800 2550
-F 0 "C17" H 1950 2600 50  0000 L CNN
-F 1 "CP" H 1950 2500 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 1838 2400 50  0001 C CNN
-F 3 "~" H 1800 2550 50  0001 C CNN
-	1    1800 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2090,17 +2035,6 @@ CARD4_GPIO4
 Text GLabel 10750 15250 0    50   Input ~ 0
 CARD4_GPIO5
 $Comp
-L Device:CP C3
-U 1 1 5CC8F7FD
-P 2950 2100
-F 0 "C3" H 3100 2150 50  0000 L CNN
-F 1 "CP" H 3100 2050 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 2988 1950 50  0001 C CNN
-F 3 "~" H 2950 2100 50  0001 C CNN
-	1    2950 2100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5D80CB96
 P 900 1850
@@ -2199,85 +2133,19 @@ F 3 "" H 1100 3250 50  0001 C CNN
 	1    1100 3250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:CP C18
-U 1 1 5D894EB8
-P 2100 2550
-F 0 "C18" H 2250 2600 50  0000 L CNN
-F 1 "CP" H 2250 2500 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 2138 2400 50  0001 C CNN
-F 3 "~" H 2100 2550 50  0001 C CNN
-	1    2100 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 2250 2950 2250
-Wire Wire Line
-	1800 2700 2100 2700
-Connection ~ 2100 2700
-$Comp
-L power:GND #PWR0102
-U 1 1 5D8B6E97
-P 2950 2250
-F 0 "#PWR0102" H 2950 2000 50  0001 C CNN
-F 1 "GND" H 2955 2077 50  0000 C CNN
-F 2 "" H 2950 2250 50  0001 C CNN
-F 3 "" H 2950 2250 50  0001 C CNN
-	1    2950 2250
-	1    0    0    -1  
-$EndComp
-Connection ~ 2950 2250
-$Comp
-L power:GND #PWR0105
-U 1 1 5D8B6F74
-P 4050 1950
-F 0 "#PWR0105" H 4050 1700 50  0001 C CNN
-F 1 "GND" H 4055 1777 50  0000 C CNN
-F 2 "" H 4050 1950 50  0001 C CNN
-F 3 "" H 4050 1950 50  0001 C CNN
-	1    4050 1950
-	1    0    0    -1  
-$EndComp
-Connection ~ 4050 1950
-Wire Wire Line
-	3750 1950 4050 1950
-Wire Wire Line
-	1100 1650 3750 1650
-Connection ~ 3750 1650
-Wire Wire Line
-	3750 1650 4050 1650
-Connection ~ 4050 1650
-Wire Wire Line
-	4050 1650 4150 1650
 Wire Wire Line
 	1100 1750 1100 1650
 Wire Wire Line
-	1100 1950 2650 1950
-Connection ~ 2650 1950
-Wire Wire Line
-	2650 1950 2950 1950
-Connection ~ 2950 1950
-Wire Wire Line
-	2950 1950 3050 1950
-Wire Wire Line
 	1100 1850 1100 1950
 Connection ~ 1100 1950
-Wire Wire Line
-	1100 2400 1800 2400
-Connection ~ 1800 2400
-Wire Wire Line
-	1800 2400 2100 2400
-Connection ~ 2100 2400
-Wire Wire Line
-	2100 2400 2250 2400
 Wire Wire Line
 	1100 2300 1100 2400
 Connection ~ 1100 2400
 Connection ~ 1100 1650
 Text GLabel 5650 2050 3    50   Input ~ 0
-IC1_SCL
+I2C1_SCL
 Text GLabel 5850 2050 3    50   Input ~ 0
-IC1_SDA
+I2C1_SDA
 Wire Wire Line
 	16350 6400 16550 6400
 Wire Wire Line
@@ -2383,8 +2251,6 @@ F 3 "~" H 6400 14200 50  0001 C CNN
 $EndComp
 Text GLabel 3050 1950 2    50   Input ~ 0
 5V_EXT
-Text GLabel 2250 2400 2    50   Input ~ 0
-3V3_EXT
 $Comp
 L power:+5V #PWR0146
 U 1 1 5DB63A5A
@@ -2469,13 +2335,13 @@ NoConn ~ 5000 13900
 $Comp
 L power:+5V #PWR0168
 U 1 1 5DBAC06C
-P 4300 12900
-F 0 "#PWR0168" H 4300 12750 50  0001 C CNN
-F 1 "+5V" H 4300 13050 50  0000 C CNN
-F 2 "" H 4300 12900 50  0001 C CNN
-F 3 "" H 4300 12900 50  0001 C CNN
-	1    4300 12900
-	1    0    0    -1  
+P 4300 12400
+F 0 "#PWR0168" H 4300 12250 50  0001 C CNN
+F 1 "+5V" H 4300 12550 50  0000 C CNN
+F 2 "" H 4300 12400 50  0001 C CNN
+F 3 "" H 4300 12400 50  0001 C CNN
+	1    4300 12400
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR0169
@@ -2529,41 +2395,41 @@ $EndComp
 $Comp
 L Device:C C10
 U 1 1 5DBCF893
-P 1650 12650
-F 0 "C10" V 1398 12650 50  0000 C CNN
-F 1 "0.1uF" V 1489 12650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1688 12500 50  0001 C CNN
-F 3 "~" H 1650 12650 50  0001 C CNN
-	1    1650 12650
-	0    -1   1    0   
+P 4900 12850
+F 0 "C10" V 4648 12850 50  0000 C CNN
+F 1 "0.1uF" V 4739 12850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4938 12700 50  0001 C CNN
+F 3 "~" H 4900 12850 50  0001 C CNN
+	1    4900 12850
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C9
 U 1 1 5DBCF899
-P 1650 12200
-F 0 "C9" V 1398 12200 50  0000 C CNN
-F 1 "4.7uF" V 1489 12200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1688 12050 50  0001 C CNN
-F 3 "~" H 1650 12200 50  0001 C CNN
-	1    1650 12200
-	0    -1   1    0   
+P 4900 12400
+F 0 "C9" V 4648 12400 50  0000 C CNN
+F 1 "4.7uF" V 4739 12400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4938 12250 50  0001 C CNN
+F 3 "~" H 4900 12400 50  0001 C CNN
+	1    4900 12400
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1500 12200 1500 12400
+	5050 12400 5050 12600
 $Comp
 L power:GND #PWR0178
 U 1 1 5DBD9009
-P 1500 12400
-F 0 "#PWR0178" H 1500 12150 50  0001 C CNN
-F 1 "GND" V 1505 12272 50  0000 R CNN
-F 2 "" H 1500 12400 50  0001 C CNN
-F 3 "" H 1500 12400 50  0001 C CNN
-	1    1500 12400
-	0    1    -1   0   
+P 5050 12600
+F 0 "#PWR0178" H 5050 12350 50  0001 C CNN
+F 1 "GND" V 5055 12472 50  0000 R CNN
+F 2 "" H 5050 12600 50  0001 C CNN
+F 3 "" H 5050 12600 50  0001 C CNN
+	1    5050 12600
+	0    -1   -1   0   
 $EndComp
-Connection ~ 1500 12400
+Connection ~ 5050 12600
 Wire Wire Line
-	1500 12400 1500 12650
+	5050 12600 5050 12850
 $Comp
 L Power_Management_MDG:TPS2121 U4
 U 1 1 5DBEA440
@@ -2754,12 +2620,6 @@ F 3 "" H 5150 6300 50  0001 C CNN
 	1    5150 6300
 	0    1    1    0   
 $EndComp
-Connection ~ 1800 12200
-Wire Wire Line
-	1800 12200 1800 12650
-Connection ~ 1800 12650
-Wire Wire Line
-	1800 12650 1800 13300
 Connection ~ 7250 10500
 Wire Wire Line
 	7250 10500 7400 10500
@@ -2884,8 +2744,6 @@ Wire Wire Line
 	4550 10800 5100 10800
 Connection ~ 4550 10800
 Connection ~ 1800 11200
-Wire Wire Line
-	1800 11200 1800 12200
 Wire Wire Line
 	1800 9300 1800 11200
 Wire Wire Line
@@ -3350,19 +3208,19 @@ Text GLabel 10750 14650 0    50   Input ~ 0
 I2C1_SCL
 Text GLabel 10750 14550 0    50   Input ~ 0
 I2C1_SDA
-Text GLabel 16550 7400 0    50   Input ~ 0
+Text GLabel 16550 7600 0    50   Input ~ 0
 CARD0_TIM1_CH1N
-Text GLabel 18350 5500 2    50   Input ~ 0
+Text GLabel 18350 5600 2    50   Input ~ 0
 CARD0_TIM3_CH1
 Text GLabel 18350 6400 2    50   Input ~ 0
 CARD0_TIM2_CH1
 Text GLabel 18350 5100 2    50   Input ~ 0
 CARD0_TIM9_CH1
-Text GLabel 16550 7700 0    50   Input ~ 0
+Text GLabel 16550 7500 0    50   Input ~ 0
 CARD1_TIM1_CH2
-Text GLabel 16550 7600 0    50   Input ~ 0
+Text GLabel 16550 7400 0    50   Input ~ 0
 CARD1_TIM1_CH2N
-Text GLabel 18350 5600 2    50   Input ~ 0
+Text GLabel 18350 5500 2    50   Input ~ 0
 CARD1_TIM3_CH2
 Text GLabel 18350 5000 2    50   Input ~ 0
 CARD1_TIM2_CH2
@@ -3376,7 +3234,7 @@ Text GLabel 18350 7200 2    50   Input ~ 0
 CARD4_TIM4_CH1
 Text GLabel 18350 8100 2    50   Input ~ 0
 CARD4_TIM12_CH2
-Text GLabel 16550 7500 0    50   Input ~ 0
+Text GLabel 16550 7700 0    50   Input ~ 0
 CARD0_TIM1_CH1
 Text GLabel 18350 8900 2    50   Input ~ 0
 CARD4_TIM8_CH1
@@ -3453,10 +3311,10 @@ $EndComp
 Text Label 3700 11800 3    50   ~ 0
 3v3_REG_OUT
 $Comp
-L logic_mdg:SN74LVC1G04DBVR U?
+L logic_mdg:SN74LVC1G04DBVR U7
 U 1 1 5D954C10
 P 8500 9350
-F 0 "U?" H 8500 9775 50  0000 C CNN
+F 0 "U7" H 8500 9775 50  0000 C CNN
 F 1 "SN74LVC1G04DBVR" H 8500 9684 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 8500 9350 50  0001 C CNN
 F 3 "" H 8500 9350 50  0001 C CNN
@@ -3477,14 +3335,47 @@ Wire Wire Line
 	7000 9350 8150 9350
 NoConn ~ 8150 9150
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0191
 U 1 1 5D9826F2
 P 8150 9550
-F 0 "#PWR?" H 8150 9300 50  0001 C CNN
+F 0 "#PWR0191" H 8150 9300 50  0001 C CNN
 F 1 "GND" H 8155 9377 50  0000 C CNN
 F 2 "" H 8150 9550 50  0001 C CNN
 F 3 "" H 8150 9550 50  0001 C CNN
 	1    8150 9550
 	0    1    1    0   
 $EndComp
+$Comp
+L power:+5V #PWR0229
+U 1 1 5D9849F2
+P 8850 9150
+F 0 "#PWR0229" H 8850 9000 50  0001 C CNN
+F 1 "+5V" V 8850 9350 50  0000 C CNN
+F 2 "" H 8850 9150 50  0001 C CNN
+F 3 "" H 8850 9150 50  0001 C CNN
+	1    8850 9150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 1650 4150 1650
+Text GLabel 2250 2400 2    50   Input ~ 0
+3V3_EXT
+Wire Wire Line
+	1100 1950 3050 1950
+Wire Wire Line
+	1100 2400 2250 2400
+Wire Wire Line
+	1800 11200 1800 13300
+Wire Wire Line
+	4300 12400 4750 12400
+Wire Wire Line
+	4300 12900 4300 12850
+Connection ~ 4300 12400
+Wire Wire Line
+	4750 12850 4300 12850
+Connection ~ 4300 12850
+Wire Wire Line
+	4300 12850 4300 12400
+Text GLabel 16550 7800 0    50   Input ~ 0
+SPI_FLASH_CS
 $EndSCHEMATC
